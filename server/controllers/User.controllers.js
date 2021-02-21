@@ -104,10 +104,7 @@ class UserController {
 
   update(req, res){
     User.findOneAndUpdate({_id: req.params._id}, req.body)
-        .then(() => res.json({
-          msg: "Updated ",
-          data: res.data
-        }))
+        .then(user => res.json(user))
         .catch(err => res.json(err));
   }
 }
