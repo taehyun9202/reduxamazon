@@ -14,9 +14,7 @@ app.use(express.json());
 require("./config/mongoose")(db_name);
 require("./routes/User.routes")(app);
 require("./routes/Product.routes")(app);
-// require("./routes/Options.routes")(app);
-// require("./routes/Carts.routes")(app);
-// require("./routes/Histories.routes")(app);
+require("./routes/History.routes")(app);
 
 app.get("/", (request, response) => response.status(200).send("hello world"));
 app.post("/payments/create", async (request, response) => {
