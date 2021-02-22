@@ -12,5 +12,5 @@ day2. product reducer and add product reducer.
       add stripe for payment method
       
 ![Alt text](payment.PNG?raw=true "Title")
+
 ![Alt text](paymentresult.PNG?raw=true "Title")
-  
